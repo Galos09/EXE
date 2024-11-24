@@ -1,0 +1,232 @@
+body {
+    background-color: bisque;
+    font-family: "Urbanist", sans-serif; 
+    }
+
+    
+header{/*Estilo de encabezado*/
+    align-items: center;
+    }
+    
+
+.contenedor1{ /*Contenedor de la imagen farmacias*/
+    background-color: whitesmoke;
+    display: inline-flex;
+    width: 100%;
+    font-size: 35px; 
+    font-weight: bold;
+    align-items: center;
+    }
+.logo1{ /*Imagen de farmacias*/
+    width: 10%;
+    padding:10px 20px 0px 20px;
+    }
+
+
+.barra_menu_1{
+    background-color: bisque;
+    display: flex;
+    width: 100%;
+    height: 36px;
+    overflow: hidden;
+    }
+.e1,.e2,.e3,.e4,.e5,.e6,.e7{
+    border: 5px solid #1e8ee98c;
+    background-color:whitesmoke;
+    }
+.menu1{
+    border-radius: 10px;
+    flex: 1.5;
+    transition: flex 0.5s ease;
+    cursor: pointer;
+    text-align: center;
+    padding: 5px;
+    }
+.menu1:hover{
+    flex: 3;  
+    text-align: center;
+    color: #1e8ee98c;
+    border: 5px solid #097fdfe1;
+    
+} 
+a:hover {
+    font-size: 25px;  
+    text-align: center;
+    letter-spacing: 3px;
+    color: #1e8ee98c;
+    text-decoration: underline;
+    }    
+a{
+    color : black; 
+    font-weight: bold; 
+    font-size: 15px;  
+    text-decoration: none;
+    }
+
+
+.linea{
+    margin: 1px;
+    width: 100%;
+    height: 6px;
+    background-color: #1e8ee98c;
+    }
+
+.menu_titulo{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    font-weight: bold;
+    color:black
+    }
+.titulo {
+    flex: 1 0 5rem;
+    background-color: transparent;
+    border: 5px solid #1e8ee98c;
+    border-radius: 10px;
+    width: 30px;
+    text-align: center;
+    }
+
+.buscar_unidad{
+    align-items: center;
+    border: 5px solid black;
+}
+.barra_buscar{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    border: 3px solid salmon;
+    width: 70%;
+    margin:5px ;
+    display: flex;
+    }
+.buscar_lista{
+    margin-left: 10px;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 25px;
+    width: 200px;
+    border: 2px solid black;
+    }
+.unidad{
+    margin-left: 10px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    color:black;
+    font-size: 20px;
+    font-weight: bold;
+    height: 25px;
+    width: 350px;
+    border: 2px solid black;
+    }
+.btn_buscar{
+    display: inline-flex;
+    border: 2px solid salmon;
+    }
+.busqueda{
+    margin-left: 10px;
+    width: 140px;   
+    background-color: rgba(20, 130, 239, 0.719);
+    border-radius: 10px;
+    font-size: 20px;
+    color: white;
+    padding-inline-start: 0px;
+    cursor: pointer;
+    }
+.lupa{
+    margin-top: 5px;
+    height: 20px;
+    cursor: pointer;
+    transform: translateX(-35px);
+    }
+
+
+
+/*
+    .con{
+    align-items: center;
+    display: inline-flex;
+    margin: 10px ;
+    padding-left: 20px;
+    position: relative;
+    }
+.l{
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+impu{
+    padding: 5px;
+    border-radius: 5px;
+    border: 1;
+    outline: none;
+    font-size: 15px;
+    margin-left: 10px;
+    }
+.la{
+    height: 20px;
+    margin: 2px;
+    cursor: pointer;
+    font-size: 1px;
+    transform: translateX(-40px);
+    }
+*/    
+
+
+
+
+
+footer {
+    background-color: #1e8ee98c;
+    padding: 5px ;
+    text-align: center;
+    }
+.EXE {
+    width: 25%;
+    aspect-ratio: 4/2;
+    object-fit: contain;
+    mix-blend-mode: color-burn;
+    /*filter: drop-shadow(40px 12px 20px black); filtro de sombra N/A a este elemento*/
+    }
+.mensaje {
+    font-size: 15px;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 10px;
+    }
+
+
+/*-----------------------------------------------------*/
+    
+    /* Funcion Calc automatizar las dimenciones de nuestros elementos
+    para dejar un elemento 100% de ancho con el equivalente a un tercio del elemento padre, menos 10px
+    width: calc( (100% / 3) - 10px )
+    width: calc(40% - (26px * 4));
+    float:left;
+    margin: 0 20px 20px 0; */
+    
+    /* Si encuentras una pantalla con maximo de 480px  */
+    @media screen and (max-width: 480px){
+            .caja01, .area {
+            width: auto;
+            }
+        h1{
+            text-align: center;
+            }
+        nav {
+            position: static;
+            }
+        .listaDif, .imagdiferenciales {
+            width: 100%;
+            }
+        }
+    
+    
+
+
