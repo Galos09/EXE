@@ -36,7 +36,7 @@
               </ul>
             </nav>  
         </header>    
-<div class="linea"></div> <!--Se crea solo linea de separacion para la busqueda-->
+<!--<div class="linea"></div> Se crea solo linea de separacion para la busqueda-->
 <div class="menu_titulo"><h1 class="titulo">Consultorios</h1> </div><!--Se crea titulo del menu principal-->
   <main>
       <div class="buscar_unidad"> <!--Se crea contenedor para el formulario de busqueda-->
@@ -53,53 +53,98 @@
             <img src="Img/Icon/lupa.png" class="lupa">
           </div>
         </div>
-      
-
-<br><br><br> ********************************************************************<br>
-********************* Datos del Consultorio ********************* <br>
-********************************************************************<br>
-      Consultorio ID: <input type="text" name = "d3" /><br/>
-      Nombre: <input type="text" name = "d2" /><br/>
-      Numero Unidad: <input type="text" name = "d1" /><br/>
-      Tipo de Consultorio: <input type="text" name = "d2" /><br/>
-      Tipo de unidad: <input type="text" name = "d4" /><br/>
-      Estatus: <input type="text" name = "d5" /><br/><br/>
-      Fecha Instalacion: <input type="text" name = "d5" /><br/><br/>
-      ********************************************************************<br>
-      *********************** Datos del Eequipo *********************** <br>
-      ********************************************************************<br>
-      Nombre del Equipo: <input type="text" name = "d5" /><br/>
-      Correo: <input type="text" name = "d5" /><br/>
-      Usuario: <input type="text" name = "d5" /><br/>
-      Contraseña Nueva: <input type="text" name = "d5" /><br/>
-      Contraseña Anterior: <input type="text" name = "d5" /><br/><br/>
-      Mac del Equipo: <input type="text" name = "d5" /><br/><br/>
-      *******************************************************************<br>
-      ********************** Datos de Contacto ********************** <br>
-      *******************************************************************<br>
-      Estado: <input type="text" name = "d5" /><br/>
-      Municipio: <input type="text" name = "d5" /><br/>
-      Supervisor: <input type="text" name = "d5" /><br/>
-      Tel Supervisor: <input type="text" name = "d5" /><br/>
-      Tel. 1 Unidad: <input type="text" name = "d5" /><br/>
-      Tel. 1 Unidad: <input type="text" name = "d5" /><br/>
-      *******************************************************************<br>
-      ****************************** Red ****************************** <br>
-      *******************************************************************<br>
-      Conexion (Wifi / Ethernet / Satelital)<input type="text" name = "d5" /><br/>
-      Tipo de Red (Sucursal / Meraki / VPN / Satelital)<input type="text" name = "d5" /><br/>
-      ************************************************<br>
-      ID: <input type="text" name = "d5" /><br/>
-      VPN: <input type="text" name = "d5" /><br/>
-      Gateway: <input type="text" name = "d5" /><br/>
-      Ip Equipo: <input type="text" name = "d5" /><br/>
-      Ip Telefono: <input type="text" name = "d5" /><br/>
-      ID Team Viwer: <input type="text" name = "d5" /><br/>
-      *******************************************************************<br>
-      ************************* Observaciones ************************* <br>
-      *******************************************************************<br>
-      Observaciones: <input type="text" name = "d5" /><br/>
-      
+        <section id="datos-principales"></section>
+        <div class="Container-principales">
+          <div class="row-principales">
+            <div class="columna c-25">
+              <h3>Datos del Consultorio</h3>
+              <p>
+                Consultorio ID: <input type="text" name = "d3" /><br/>
+                Nombre: <input type="text" name = "d2" /><br/>
+                Numero Unidad: <input type="text" name = "d1" /><br/>
+                Tipo de Consultorio: <input type="text" name = "d2" /><br/>
+                Tipo de unidad: <input type="text" name = "d4" /><br/>
+                Estatus: <input type="text" name = "d5" /><br/>
+                Fecha Instalacion: <input type="text" name = "d5" /><br/>
+                </p>
+            </div>
+            <div class="columna c-25">
+              <h3>Datos del Equipo </h3>
+              <p>
+                Nombre del Equipo: <input type="text" name = "d5" /><br/>
+                Correo: <input type="text" name = "d5" /><br/>
+                Usuario: <input type="text" name = "d5" /><br/>
+                Contraseña Nueva: <input type="text" name = "d5" /><br/>
+                Contraseña Anterior: <input type="text" name = "d5" /><br/>
+                Mac del Equipo: <input type="text" name = "d5" /><br/>
+              </p>
+            </div>
+          </div>
+        </div>
+        <section id="dato-ubicacion">
+          <div class="Container-ubicacion">
+            <div class="row-ubicacion">
+              <div class="columna ubicacion-texto">
+                <h3>Ubicacion Unidad</h3>
+                <div class="ubc">
+                  <label>Estado:</label><br>
+                  <input type="text" name = "d5" /><br/>
+                  <label>Municipio:</label><br>
+                  <input type="text" name = "d5" /><br/>
+                  <label>Direccion: </label><br>
+                  <input type="text" name = "d5" /><br/>
+                </div>
+                </div>
+              <div class="columna ubicacion-mapa">
+                <h3>Mapa</h3>
+                <iframe width="300" height="250" frameborder="0" id="map" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=33191c83c7266992d302e320937d4e98fea1b726'></script>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="datos-contacto">
+          <div class="Container-contacto">
+            <div class="row-contacto">
+              <div class="columna 100">
+                <h3>Datos de Contacto</h3>
+                <p>
+                  Supervisor: <input type="text" name = "d5" /><br/>
+                  Tel Supervisor: <input type="text" name = "d5" /><br/>
+                  Tel. 1 Unidad: <input type="text" name = "d5" /><br/>
+                  Tel. 1 Unidad: <input type="text" name = "d5" /><br/>
+                  </p>
+                </div>
+              </div>
+            </div>
+        </section>
+        <section id="datos-pruebas">
+          <div class="Container-pruebas">
+            <div class="row-pruebas">
+              <div class="columna c-50">
+                <h3> Datos de Red</h3>
+                <div class="tipo-red">
+                  Conexion (Wifi / Ethernet / Satelital)<input type="text" name = "d5" /><br/>
+                  Tipo de Red (Sucursal / Meraki / VPN / Satelital)<input type="text" name = "d5" /><br/>
+                </div>
+                <div class="inf-red">
+                  ID: <input type="text" name = "d5" /><br/>
+                  VPN: <input type="text" name = "d5" /><br/>
+                  Gateway: <input type="text" name = "d5" /><br/>
+                  Ip Equipo: <input type="text" name = "d5" /><br/>
+                  Ip Telefono: <input type="text" name = "d5" /><br/>
+                  ID Team Viwer: <input type="text" name = "d5" /><br/>
+                </div>
+              </div>
+              <div class="columna c-50">
+                <h3>Observaciones </h3>
+                <p>
+                  Observaciones: <input type="text" name = "d5" /><br/>
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
     </div>
     
 
@@ -109,11 +154,9 @@
         <div class="popover popover-left type-selector">
           <div class="popover-container">
             <button type="button" class="search-selected popover-button btn row row--vertical-center mg-none nostyle track active" data-qa="search-selector" data-track-arguments="ga, event, search, search-selector, button">
-              <i class="icon icon--md icon--photo show-mobile"></i>
-              <span class="hide-mobile">Iconos</span>
-              <i class="icon icon--md icon--caret-down"></i>
+               <span class="hide-mobile">Iconos</span>
+            
             </button>
-            <div class="stickers popover-content show-menu">
               <ul>
                                                                                 <li class="radio-group">
                       <input id="radio_search_by_icons" type="radio" class="hidden track" name="type" value="icon" data-type="icons" data-url="https://www.flaticon.es/resultados" checked="" data-track-arguments="ga, event, search, search-selector, icons">
@@ -134,11 +177,6 @@
             </div>
           </div>
         </div>
-<br><br><br>**************************************************************************<br><br><br>
-*************************************************************************************<br>
-*************************************************************************************<br><br><br>
-
-
 
         </main>
     

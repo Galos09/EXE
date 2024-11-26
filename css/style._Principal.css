@@ -4,11 +4,11 @@ body {
     
 header{/*Estilo de encabezado*/
     background-color: #1e8ee98c;
-    padding: 25px 0;
+    padding: 20px 0;
     }
    
 .caja01{ /*Contenedor de la imagen farmacias*/
-    width: 940px; 
+    width: 800px; 
     position: relative;
     margin: 0 auto;
     }
@@ -31,8 +31,8 @@ header{/*Estilo de encabezado*/
     margin: 25px auto 25px auto;
     position: relative;
     border:1px solid black;
-    width: 50%;
-    height: 75%;
+    width: 40%;
+    height: 70%;
     background:  #1e8ee9f1;
     color:whitesmoke;
     border-radius: 20px;

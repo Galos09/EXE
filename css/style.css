@@ -7,8 +7,9 @@ body {
 header{/*Estilo de encabezado*/
     align-items: center;
     }
-    
 
+
+/* Inicia con el encabezado donde se encapsulan  imagen de farmacias y texto de bienvenida*/    
 .contenedor1{ /*Contenedor de la imagen farmacias*/
     background-color: whitesmoke;
     display: inline-flex;
@@ -22,58 +23,62 @@ header{/*Estilo de encabezado*/
     padding:10px 20px 0px 20px;
     }
 
-
+/* extilos para el inicio de la Barra menu principal*/
 .barra_menu_1{
-    background-color: bisque;
     display: flex;
-    width: 100%;
-    height: 36px;
+    flex-wrap: wrap;
+    background-color: transparent;
+    width: auto;
+    height: auto;
     overflow: hidden;
-    }
-.e1,.e2,.e3,.e4,.e5,.e6,.e7{
-    border: 5px solid #1e8ee98c;
-    background-color:whitesmoke;
-    }
+    align-items: center;
+}
 .menu1{
-    border-radius: 10px;
-    flex: 1.5;
+    border-radius: 15px;
+    flex: 1;
     transition: flex 0.5s ease;
     cursor: pointer;
     text-align: center;
     padding: 5px;
     }
-.menu1:hover{
-    flex: 3;  
-    text-align: center;
-    color: #1e8ee98c;
-    border: 5px solid #097fdfe1;
-    
-} 
-a:hover {
-    font-size: 25px;  
-    text-align: center;
-    letter-spacing: 3px;
-    color: #1e8ee98c;
-    text-decoration: underline;
-    }    
+.e1,.e2,.e3,.e4,.e5,.e6,.e7{
+    border: 4px solid #1e8ee98c;
+    background-color:#d6edfac9;
+    }
 a{
     color : black; 
     font-weight: bold; 
     font-size: 15px;  
     text-decoration: none;
     }
+.menu1:hover{
+    flex: 2;  
+    text-align: center;
+    color: #097fdfe1;
+    border: 5px solid #097fdfe1;  
+} 
+a:hover {
+    font-size: 25px;  
+    text-align: center;
+    letter-spacing: 3px;
+    color: #097fdfe1;
+    text-decoration: underline;
+    }    
 
 
+/*estilo de la linea de separacion 
 .linea{
     margin: 1px;
     width: 100%;
     height: 6px;
     background-color: #1e8ee98c;
-    }
+    }*/
 
+
+/*Estilo del titulo del menu en que que estamos*/
 .menu_titulo{
+    margin-top: 3px;
     display: flex;
-    flex-wrap: wrap;
     font-size: 30px;
     font-weight: bold;
     color:black
@@ -87,20 +92,23 @@ a{
     text-align: center;
     }
 
+
+/*Estilo para el contenido de la busqueda */
 .buscar_unidad{
     align-items: center;
     border: 5px solid black;
 }
+
+/*Estilos de la barra de busqueda*/
 .barra_buscar{
     display: flex;
     flex-wrap: wrap;
     margin: auto;
-    border: 3px solid salmon;
-    width: 70%;
+    width: 80%;
     margin:5px ;
-    display: flex;
     }
 .buscar_lista{
+    border: 2px solid black;
     margin-left: 10px;
     padding-left: 10px;
     border-radius: 10px;
@@ -110,20 +118,19 @@ a{
     font-weight: bold;
     height: 25px;
     width: 200px;
-    border: 2px solid black;
     }
 .unidad{
+    border: 2px solid black;
+    border-radius: 10px;
     margin-left: 10px;
     text-transform: uppercase;
     padding-left: 10px;
-    border-radius: 10px;
     background-color: transparent;
     color:black;
     font-size: 20px;
     font-weight: bold;
     height: 25px;
     width: 350px;
-    border: 2px solid black;
     }
 .btn_buscar{
     display: inline-flex;
@@ -145,40 +152,57 @@ a{
     transform: translateX(-35px);
     }
 
-
-
-/*
-    .con{
-    align-items: center;
-    display: inline-flex;
-    margin: 10px ;
-    padding-left: 20px;
-    position: relative;
-    }
-.l{
-    font-size: 20px;
+/*Estilos para secciones*/
+section{
+    border: 2px solid green;
+    display: flex;
+    flex-wrap: wrap;
+   }
+h3{
+    text-align: center;
     font-weight: bold;
+    text-decoration: underline;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    }
+.row-principales{
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-around;
     }
 
-impu{
-    padding: 5px;
-    border-radius: 5px;
-    border: 1;
-    outline: none;
-    font-size: 15px;
-    margin-left: 10px;
+.row-ubicacion{
+        border: 6px solid white;
+        display: flex;
+        justify-content: space-around;
     }
-.la{
-    height: 20px;
-    margin: 2px;
-    cursor: pointer;
-    font-size: 1px;
-    transform: translateX(-40px);
+    .ubc{
+        border: 2px solid;
+        text-align: center;
+        align-items: center;
     }
-*/    
+    .ubicacion-texto{
+        border: 2px solid brown;
+    }
+    .ubicacion-mapa{
+        border: 2px solid salmon;
+    }
+#map{
+    border: 2px solid;
+    display: flex;
 
-
-
+}
+    
+.row-contacto{
+    border: 2px solid blue;
+    display: block;
+}
+.row-pruebas{
+    border: 2px solid yellow;
+    display: flex;
+    justify-content: space-around;
+}
 
 
 footer {
