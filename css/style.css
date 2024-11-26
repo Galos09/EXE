@@ -175,7 +175,7 @@ h3{
 .row-ubicacion{
         border: 6px solid white;
         display: flex;
-        justify-content: space-around;
+        justify-content: right;
     }
     .ubc{
         border: 2px solid;
