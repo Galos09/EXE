@@ -7,7 +7,7 @@
         <meta name="viewpor" content="width=device-width">
         <!--Se crea icono y texto de la barra de navegacion-->
         <link rel="shortcut icon" href="Img/Index/favicon.ico" type="image/png">
-        <title>Soporte EXE</title>
+        <title>Consultorios</title>
         <!-- Borra los formatos de posisionamiento por defaul, limpiand o para poder personalizar-->
         <link rel="stylesheet" href="Css/reset.css">
         <!-- Se crea la hoja de estilos que daremos a nuestra pagina -->
@@ -20,27 +20,27 @@
     
     <body>
         <header>
-            <Div class="contenedor1"> <!--Se crea contenedor para el logo y texto de bienvenida-->
+            <div class="contenedor1"> <!--Se crea contenedor para el logo y texto de bienvenida-->
                 <img src="Img/Servicios TI.png" class="logo1">
-                <h2>BIENVENIDO<br>SOPORTE EXE</h2>
+                <div class="saludo"><h2>BIENVENIDO<br>SOPORTE EXE</h2></div>
+                <a href="index.html"><img src="Img/Icon/exit.png" class="salir" ></a>
             </div>
             <nav class="contenedor2"><!--Se crea contenedor para la barra de navegacion de menu principal-->
               <ul class="barra_menu_1">
-                <li class="menu1 e1"> <a href="index.html">INICIO</a></li>
+                <li class="menu1 e1"> <a href="#">INICIO</a></li>
                 <li class="menu1 e2"> <a href="EXE.html">CONSULTORIOS</a></li>
                 <li class="menu1 e3"> <a href="">SOLUCIONES</a></li>
                 <li class="menu1 e4"> <a href="">ARCHIVOS</a></li>
-                <li class="menu1 e5"> <a href="">LIGAS</a></li>
+                <li class="menu1 e5"> <a href="Ligas.html">LIGAS</a></li>
                 <li class="menu1 e6"> <a href="">CALENDARIO</a></li>
                 <li class="menu1 e7"> <a href="">AVISOS</a> </li>
               </ul>
-            </nav>  
+            </nav> 
         </header>    
-<!--<div class="linea"></div> Se crea solo linea de separacion para la busqueda-->
-<div class="menu_titulo"><h1 class="titulo">Consultorios</h1> </div><!--Se crea titulo del menu principal-->
   <main>
-      <div class="buscar_unidad"> <!--Se crea contenedor para el formulario de busqueda-->
-        <div class="barra_buscar">
+    <div class="buscar_unidad"> <!--Se crea contenedor para el formulario de busqueda-->
+      <div class="menu_titulo"><h1 class="titulo">Consultorios</h1> </div><!--Se crea titulo del menu principal-->
+      <div class="barra_buscar">
           <input list="lisbuscar" placeholder="Buscar" class="buscar_lista"></input>
           <datalist id="lisbuscar"><!--Lista desplegable de opciones-->
             <option type="radio" value="Nombre"></option>
@@ -148,44 +148,11 @@
           </div>
         </section>
     </div>
-    
-
-<br><br><br>**************************************************************************<br><br><br>
-
-<form action="https://www.flaticon.es/resultados" method="get" name="search-form" class="main_search_bar">
-        <div class="popover popover-left type-selector">
-          <div class="popover-container">
-            <button type="button" class="search-selected popover-button btn row row--vertical-center mg-none nostyle track active" data-qa="search-selector" data-track-arguments="ga, event, search, search-selector, button">
-               <span class="hide-mobile">Iconos</span>
-            
-            </button>
-              <ul>
-                                                                                <li class="radio-group">
-                      <input id="radio_search_by_icons" type="radio" class="hidden track" name="type" value="icon" data-type="icons" data-url="https://www.flaticon.es/resultados" checked="" data-track-arguments="ga, event, search, search-selector, icons">
-                      <label for="radio_search_by_icons" class="radio fake-radio"></label>
-                      <label for="radio_search_by_icons">ID_consultorio</label>
-                    </li>
-                                                  <li class="radio-group">
-                      <input id="radio_search_by_stickers" type="radio" class="hidden track" name="type" value="sticker" data-type="stickers" data-url="https://www.flaticon.es/resultados" data-track-arguments="ga, event, search, search-selector, stickers">
-                      <label for="radio_search_by_stickers" class="radio fake-radio"></label>
-                      <label for="radio_search_by_stickers">Num. Consultorio</label>
-                    </li>
-                                                  <li class="radio-group">
-                      <input id="radio_search_by_animated_icons" type="radio" class="hidden track" name="type" value="animated-icon" data-type="animated icons" data-url="https://www.flaticon.es/resultados" data-track-arguments="ga, event, search, search-selector, animated-icons">
-                      <label for="radio_search_by_animated_icons" class="radio fake-radio"></label>
-                      <label for="radio_search_by_animated_icons">Nombre</label>
-                    </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
-        </main>
+  </main>
     
   
         
         <footer>
             <img src="Img/Index/EXE.jpg" class="EXE">
-            <p class="mensaje">SE CREA ESTA HERRAMIENTA CON LA FINALIDAD DE FACILITAR LA OPERACION <br><strong>SOPORTE EXE</strong> </p>
         </footer>
     </body>
