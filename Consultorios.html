@@ -23,7 +23,7 @@
                 <img src="Img/Servicios TI.png" class="logo1">
                 <div class="saludo"><h2>BIENVENIDO<br>SOPORTE EXE</h2></div>
                 <a href="index.html"><img src="Img/Icon/exit.png" class="salir" ></a>
-            </div class="barrra-nav">
+            </div>
             <nav><!--Se crea contenedor para la barra de navegacion de menu principal-->
               <ul class="barra_menu_1">
                 <li class="menu1 e1"> <a href="Inicio.html">INICIO</a></li>
@@ -52,74 +52,112 @@
             <img src="Img/Icon/lupa.png" class="lupa">
           </div>
         </div>
-        <section id="datos-principales"></section>
-        <div class="Container-principales">
+      <section id="datos-principales">
+        <div class="container-principales">
           <div class="row-principales">
-            <div class="columna c-25">
+            <div class="columna c-50">
               <h3>Datos del Consultorio</h3>
-              <p>
-                Consultorio ID: <input type="text" name = "d3" /><br/>
-                Nombre: <input type="text" name = "d2" /><br/>
-                Numero Unidad: <input type="text" name = "d1" /><br/>
-                Tipo de Consultorio: <input type="text" name = "d2" /><br/>
-                Tipo de unidad: <input type="text" name = "d4" /><br/>
-                Estatus: <input type="text" name = "d5" /><br/>
-                Fecha Instalacion: <input type="text" name = "d5" /><br/>
-                </p>
+              <form class="form-datos-principales">
+                <div class="fdp">
+                  <label class="ld">Consultorio ID:</label>
+                  <input type="text" name = "d1" class="ind"/></div>
+                <div class="fdp">
+                  <label class="ld">Nombre: </label>
+                  <input type="text" name = "d2" class="ind"/></div>
+                <div class="fdp">
+                  <label class="ld">Numero Unidad:</label>
+                  <input type="text" name = "d3" class="ind"/></div>
+                <div class="fdp">
+                  <label class="ld">Tipo de Consultorio:</label>
+                  <input type="text" name = "d4" class="ind"/></div>
+                <div class="fdp">
+                  <label class="ld">Tipo de unidad:</label>
+                  <input type="text" name = "d5" class="ind"/></div>
+                <div class="fdp">
+                  <label class="ld">Estatus:</label>
+                  <input type="text" name = "d6" class="ind"/></div>
+                <div class="fdp">
+                  <label class="ld">Fecha Instalacion:</label> 
+                  <input type="text" name = "d7" class="ind"/></div>
+              </form>
             </div>
-            <div class="columna c-25">
+            <div class="columna c-50">
               <h3>Datos del Equipo </h3>
-              <p>
-                Nombre del Equipo: <input type="text" name = "d5" /><br/>
-                Correo Unidad: <input type="text" name = "d5" /><br/>
-                Usuario: <input type="text" name = "d5" /><br/>
-                Contraseña Nueva: <input type="text" name = "d5" /><br/>
-                Contraseña Anterior: <input type="text" name = "d5" /><br/>
-                Mac del Equipo: <input type="text" name = "d5" /><br/>
-              </p>
+              <form class="form-datos-equipo">
+                <div class="fde">
+                  <label class="ld">Nombre del Equipo:</label> 
+                  <input type="text" name = "d8" class="ind"/></div>
+                <div class="fde">
+                  <label class="ld">Correo Unidad:</label>
+                  <input type="text" name = "d9" class="ind"/></div>
+                <div class="fde">
+                  <label class="ld">Usuario:</label>
+                  <input type="text" name = "d10" class="ind"/></div>
+                <div class="fde">
+                  <label class="ld">Contraseña Nueva:</label> 
+                  <input type="text" name = "d11" class="ind"/></div>
+                <div class="fde">
+                  <label class="ld">Contraseña Anterior:</label> 
+                  <input type="text" name = "d12" class="ind"/></div>
+                <div class="fde">
+                  <label class="ld">Mac del Equipo:</label> 
+                  <input type="text" name = "d13" class="ind"/></div>
+              </form>
             </div>
           </div>
         </div>
-        <section id="dato-ubicacion">
+      </section>
+      <section id="datos-ubicacion">
           <div class="Container-ubicacion">
             <div class="row-ubicacion">
               <div class="columna ubicacion-texto">
                 <h3>Ubicacion Unidad</h3>
-                <div class="ubc">
-                  <label>Estado:</label><br>
-                  <input type="text" name = "d5" /><br/>
-                  <label>Municipio:</label><br>
-                  <input type="text" name = "d5" /><br/>
-                  <label>Direccion: </label><br>
-                  <input type="text" name = "d5" /><br/>
-                  <Label>Zona Horaria</Label><br>
-                  <input type="text" name = "d5" /><br/>
-                </div>
-                </div>
-              <div class="columna ubicacion-mapa">
+                <form class="form-datos-ubicacion">
+                  <div class="fdu">
+                    <label class="ld">Estado:</label>
+                    <input type="text" name = "d14" class="ind"/></div>
+                  <div class="fdu">
+                    <label class="ld">Municipio:</label>
+                    <input type="text" name = "d15" class="ind"/></div>
+                  <div class="fdu">
+                    <label class="ld">Direccion:</label>
+                    <input type="text" name = "d16" class="ind"/></div>
+                  <div class="fdu">
+                    <label class="ld">DZona Horaria:</label>
+                    <input type="text" name = "d17" class="ind"/></div>
+                </form>
+              </div>
+              <div class="columna ubicacion-mapa ">
                 <h3>Mapa</h3>
-                <iframe width="300" height="250" frameborder="0" id="map" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe> 
-                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=33191c83c7266992d302e320937d4e98fea1b726'></script>
+                <iframe width="300" height="250" frameborder="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
               </div>
             </div>
           </div>
-        </section>
-        <section id="datos-contacto">
+      </section>
+      <section id="datos-contacto">
           <div class="Container-contacto">
             <div class="row-contacto">
-              <div class="columna 100">
+              <div class="columna c-100">
                 <h3>Datos de Contacto</h3>
-                <p>
-                  Supervisor: <input type="text" name = "d5" /><br/>
-                  Tel Supervisor: <input type="text" name = "d5" /><br/>
-                  Tel. 1 Unidad: <input type="text" name = "d5" /><br/>
-                  Tel. 1 Unidad: <input type="text" name = "d5" /><br/>
-                  </p>
-                </div>
+                <form class="form-datos-contacto">
+                  <div class="fdc">
+                    <label class="ld">Supervisor:</label>
+                    <input type="text" name = "d1" class="ind"/></div>
+                  <div class="fdcontacto">
+                    <label class="ld">Tel Supervisor:</label>
+                    <input type="text" name = "d1" class="ind"/></div>
+                  <div class="fdcontacto">
+                    <label class="ld">Tel. 1 Unidad:</label>
+                    <input type="text" name = "d1" class="ind"/></div>
+                  <div class="fdcontacto">
+                    <label class="ld">Tel. 2 Unidad:</label>
+                    <input type="text" name = "d1" class="ind"/></div>
+                </form>
               </div>
             </div>
-        </section>
-        <section id="datos-pruebas">
+          </div>
+      </section>
+      <section id="datos-pruebas">
           <div class="Container-pruebas">
             <div class="row-pruebas">
               <div class="columna c-50">
@@ -145,7 +183,7 @@
               </div>
             </div>
           </div>
-        </section>
+      </section>
     </div>
   </main>
     
