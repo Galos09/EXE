@@ -38,6 +38,7 @@
             <div class="titulo-menu"><h1 class="titulo">Consultorios</h1> </div><!--Se crea titulo del menu principal-->
         </header>    
   <main>
+    <section id="consulta">
     <div class="consultorios"> <!--Se crea contenedor para el formulario de busqueda-->
       <div class="barra_buscar">
           <input list="lisbuscar" placeholder="Buscar" class="buscar_lista"></input>
@@ -52,10 +53,11 @@
             <img src="Img/Icon/lupa.png" class="lupa">
           </div>
         </div>
+      </section>
       <section id="datos-principales">
         <div class="container-principales">
           <div class="row-principales">
-            <div class="columna c-50">
+            <div class="columna c-45">
               <h3>Datos del Consultorio</h3>
               <form class="form-datos-principales">
                 <div class="fdp">
@@ -81,7 +83,7 @@
                   <input type="text" name = "d7" class="ind"/></div>
               </form>
             </div>
-            <div class="columna c-50">
+            <div class="columna c-45">
               <h3>Datos del Equipo </h3>
               <form class="form-datos-equipo">
                 <div class="fde">
@@ -110,7 +112,7 @@
       <section id="datos-ubicacion">
           <div class="Container-ubicacion">
             <div class="row-ubicacion">
-              <div class="columna ubicacion-texto">
+              <div class="columna ubicacion-texto c-40">
                 <h3>Ubicacion Unidad</h3>
                 <form class="form-datos-ubicacion">
                   <div class="fdu">
@@ -121,75 +123,92 @@
                     <input type="text" name = "d15" class="ind"/></div>
                   <div class="fdu">
                     <label class="ld">Direccion:</label>
-                    <input type="text" name = "d16" class="ind"/></div>
+                    <input type="text" name = "d16" class="inddireccion"/></div>
                   <div class="fdu">
-                    <label class="ld">DZona Horaria:</label>
+                    <label class="ld">Zona Horaria:</label>
                     <input type="text" name = "d17" class="ind"/></div>
                 </form>
               </div>
-              <div class="columna ubicacion-mapa ">
+              <div class="columna ubicacion-mapa c-60">
                 <h3>Mapa</h3>
-                <iframe width="300" height="250" frameborder="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                <div class="imgmap">
+                  <iframe class="mapa" width="300" height="250" frameborder="0" src="https://maps.google.com/maps?width=520&amp;height=400&amp;hl=en&amp;q=%20+()&amp;t=&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
               </div>
             </div>
           </div>
       </section>
       <section id="datos-contacto">
-          <div class="Container-contacto">
-            <div class="row-contacto">
-              <div class="columna c-100">
-                <h3>Datos de Contacto</h3>
-                <form class="form-datos-contacto">
+        <div class="Container-contacto">
+          <div class="row-contacto">
+            <div class="th3"><h3>Datos de Contacto</h3></div>
+            <div class="columna  contacto c-100">
+              <form class="form-datos-contacto">
                   <div class="fdc">
-                    <label class="ld">Supervisor:</label>
-                    <input type="text" name = "d1" class="ind"/></div>
-                  <div class="fdcontacto">
+                    <label class="ld">Nombre Supervisor</label>
+                    <input type="text" name = "d18" class="ind"/></div>
+                  <div class="fdc">
                     <label class="ld">Tel Supervisor:</label>
-                    <input type="text" name = "d1" class="ind"/></div>
-                  <div class="fdcontacto">
-                    <label class="ld">Tel. 1 Unidad:</label>
-                    <input type="text" name = "d1" class="ind"/></div>
-                  <div class="fdcontacto">
-                    <label class="ld">Tel. 2 Unidad:</label>
-                    <input type="text" name = "d1" class="ind"/></div>
-                </form>
-              </div>
+                    <input type="text" name = "d19" class="ind"/></div>
+                  <div class="fdc">
+                    <label class="ld">Tel_1 Unidad:</label>
+                    <input type="text" name = "d20" class="ind"/></div>
+                  <div class="fdc">
+                    <label class="ld">Tel_2 Unidad:</label>
+                    <input type="text" name = "d21" class="ind"/></div>
+              </form>
             </div>
           </div>
-      </section>
+        </div>
+      </section> 
       <section id="datos-pruebas">
           <div class="Container-pruebas">
-            <div class="row-pruebas">
-              <div class="columna c-50">
-                <h3> Datos de Red</h3>
-                <div class="tipo-red">
-                  Conexion (Wifi / Ethernet / Satelital)<input type="text" name = "d5" /><br/>
-                  Tipo de Red (Sucursal / Meraki / VPN / Satelital)<input type="text" name = "d5" /><br/>
-                </div>
-                <div class="inf-red">
-                  ID: <input type="text" name = "d5" /><br/>
-                  VPN: <input type="text" name = "d5" /><button>PING</button><br/>
-                  Gateway: <input type="text" name = "d5" /><button>PING</button><br/>
-                  Ip Equipo: <input type="text" name = "d5" /><button>PING</button><br/>
-                  Ip Telefono: <input type="text" name = "d5" /><br/>
-                  ID Team Viwer: <input type="text" name = "d5" /><br/>
-                </div>
-              </div>
-              <div class="columna c-50">
-                <h3>Observaciones </h3>
-                <p>
-                  Observaciones: <input type="text" name = "d5" /><br/>
-                </p>
-              </div>
+            
+            <div class="th3"><h3> Datos de Red</h3></div>
+            <div class="tipo-red">
+              <div class="fdc">
+                <label class="ld">Conexion (Wifi / Ethernet / Satelital)</label>
+                <input type="text" name = "d22" class="ind"/></div>
+              <div class="fdc">
+                 <label class="ld">Tipo de Red (Sucursal / Meraki / VPN / Satelital)</label>
+                 <input type="text" name = "d23" class="ind"/></div>
             </div>
-          </div>
+              <div class="row-pruebas">
+                <div class="columna  columnared c-">
+                  <form class="form-datos-red">
+                    <div class="fdr">
+                      <label class="ld">VPN</label>
+                      <input type="text" name = "25" class="ind"/>
+                      <button class="btnping">PING</button></div>
+                    <div class="fdr">
+                      <label class="ld">Gateway</label>
+                      <input type="text" name = "26" class="ind"/>
+                      <button class="btnping">PING</button></div>
+                    <div class="fdr">
+                      <label class="ld">Ip Equipo</label>
+                      <input type="text" name = "27" class="ind"/>
+                      <button class="btnping">PING</button></div>
+                    <div class="fdr">
+                      <label class="ld">Ip Telefono</label>
+                      <input type="text" name = "28" class="ind"/>
+                      <button class="btnping">PING</button></div>
+                    <div class="fdr">
+                      <label class="ldt">ID Team Viewer</label>
+                      <input type="text" name = "29" class="indt"/></div>
+                  </form>
+                </div> <!--cierre primera columna 50-->
+                <div class="columna columnaobservacion c-">
+                  <div class="th3"><h3>Observaciones </h3></div>
+                  <div class="descripcion">
+                    <input type="text" name = "29" class="indo"/></div>
+                </div><!--cierre 2 columna 50-->
+              </div><!--cierra row-pruebas-->
+          </div> <!--Cierre Container pruebas-->
       </section>
-    </div>
+
+    </div><!--Cierre modulo consultorios-->
   </main>
-    
-  
-        
-        <footer>
-            <img src="Img/Index/EXE.jpg" class="EXE">
-        </footer>
-    </body>
+    <footer>
+      <img src="Img/Index/EXE.jpg" class="EXE">
+    </footer>
+  </body>
